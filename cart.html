@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras | Loja Nova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">L</span>
+          <span>Loja Nova</span>
+        </div>
+
+        <nav class="menu" aria-label="Navegação principal">
+          <a href="index.html#inicio">Início</a>
+          <a href="index.html#produtos">Produtos</a>
+          <a href="index.html#categorias">Categorias</a>
+          <a href="index.html#sobre">Sobre</a>
+        </nav>
+
+        <div class="actions">
+          <button class="ghost-btn">Entrar</button>
+          <a href="cart.html" class="cart-btn">
+            Carrinho <span id="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="cart-section">
+        <div class="container">
+          <h1>Seu Carrinho</h1>
+
+          <div class="cart-layout">
+            <div class="cart-items-container">
+              <div id="cart-items" class="cart-items">
+                <div class="empty-state">
+                  <span style="font-size: 3rem">🛒</span>
+                  <h2>Carrinho vazio</h2>
+                  <p>Comece a adicionar produtos para sua compra</p>
+                  <a href="index.html#produtos" class="primary-btn">Voltar às compras</a>
+                </div>
+              </div>
+            </div>
+
+            <aside class="cart-summary">
+              <div class="summary-box">
+                <h3>Resumo da compra</h3>
+
+                <div class="summary-item">
+                  <span>Subtotal:</span>
+                  <span id="subtotal">R$ 0,00</span>
+                </div>
+
+                <div class="summary-item">
+                  <span>Frete:</span>
+                  <span id="shipping">R$ 0,00</span>
+                </div>
+
+                <div class="summary-item discount">
+                  <span>Desconto:</span>
+                  <span id="discount">R$ 0,00</span>
+                </div>
+
+                <hr />
+
+                <div class="summary-total">
+                  <span>Total:</span>
+                  <span id="total">R$ 0,00</span>
+                </div>
+
+                <button id="checkout-btn" class="primary-btn full-width" disabled>
+                  Ir para pagamento
+                </button>
+
+                <button
+                  id="continue-shopping"
+                  class="secondary-btn full-width"
+                  onclick="window.location.href='index.html#produtos'"
+                >
+                  Continuar comprando
+                </button>
+
+                <div class="promo-section">
+                  <label>Código promocional</label>
+                  <div class="promo-input">
+                    <input
+                      type="text"
+                      id="promo-code"
+                      placeholder="Digite seu código"
+                      maxlength="20"
+                    />
+                    <button id="apply-promo" type="button">Aplicar</button>
+                  </div>
+                  <p id="promo-message" style="font-size: 0.85rem; margin-top: 6px"></p>
+                </div>
+              </div>
+
+              <div class="benefits-mini">
+                <div class="benefit-mini">
+                  <span>🚚</span>
+                  <p>Frete rápido</p>
+                </div>
+                <div class="benefit-mini">
+                  <span>🔒</span>
+                  <p>Compra segura</p>
+                </div>
+                <div class="benefit-mini">
+                  <span>✓</span>
+                  <p>Garantia</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">L</span>
+            <span>Loja Nova</span>
+          </div>
+          <p>Seu próximo favorito está aqui.</p>
+        </div>
+
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li>Sobre</li>
+            <li>Contato</li>
+            <li>Políticas</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Atendimento</h4>
+          <ul>
+            <li>ajuda@lojanova.com</li>
+            <li>(11) 4002-8922</li>
+            <li>Seg-Sex, 9h às 18h</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="cart.js"></script>
+  </body>
+</html>
