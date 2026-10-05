@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Nova | Seu estilo, sua escolha</title>
+    <meta
+      name="description"
+      content="Loja Nova: descobertas modernas em moda, tecnologia e casa com entregas rápidas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">L</span>
+          <span>Loja Nova</span>
+        </div>
+
+        <nav class="menu" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#categorias">Categorias</a>
+          <a href="#sobre">Sobre</a>
+        </nav>
+
+        <div class="actions">
+          <button class="ghost-btn">Entrar</button>
+          <button class="cart-btn" aria-label="Carrinho de compras">
+            Carrinho <span id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Promoções imperdíveis</p>
+            <h1>O estilo que você ama, com preços que surpreendem.</h1>
+            <p class="subtitle">
+              Descubra peças modernas para casa, moda e tecnologia com entrega rápida e
+              qualidade garantida.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#produtos">Comprar agora</a>
+              <a class="secondary-btn" href="#sobre">Saiba mais</a>
+            </div>
+            <ul class="hero-stats" aria-label="Estatísticas da loja">
+              <li><strong>+25k</strong><span>clientes</span></li>
+              <li><strong>4.9/5</strong><span>avaliação</span></li>
+              <li><strong>48h</strong><span>entrega</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Produtos em destaque">
+            <div class="product-tag tag-top">Mais vendido</div>
+            <div class="showcase-card large">
+              <div class="product-badge">SmartWatch</div>
+              <h3>Pulse X Pro</h3>
+              <p>R$ 899,00</p>
+            </div>
+            <div class="showcase-card small">
+              <div class="mini-card">
+                <span>Até 40% OFF</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="categorias" class="categories">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Categorias</p>
+            <h2>Explore por interesse</h2>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-item">
+              <span class="emoji">👕</span>
+              <h3>Moda</h3>
+              <p>Looks para o dia a dia</p>
+            </article>
+            <article class="category-item">
+              <span class="emoji">💻</span>
+              <h3>Tecnologia</h3>
+              <p>Eletrônicos e acessórios</p>
+            </article>
+            <article class="category-item">
+              <span class="emoji">🏠</span>
+              <h3>Casa</h3>
+              <p>Itens para conforto e decoração</p>
+            </article>
+            <article class="category-item">
+              <span class="emoji">🎁</span>
+              <h3>Presentes</h3>
+              <p>Ideias para todas as ocasiões</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="produtos" class="products">
+        <div class="container">
+          <div class="section-head row">
+            <div>
+              <p class="eyebrow">Destaques</p>
+              <h2>Produtos em alta</h2>
+            </div>
+            <a href="#" class="text-link">Ver todos</a>
+          </div>
+
+          <div id="product-list" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="container benefit-grid">
+          <div class="benefit-box">
+            <span>🚚</span>
+            <h3>Frete rápido</h3>
+            <p>Entrega em até 48 horas em regiões selecionadas.</p>
+          </div>
+          <div class="benefit-box">
+            <span>🔒</span>
+            <h3>Compra segura</h3>
+            <p>Pagamento protegido e proteção na entrega.</p>
+          </div>
+          <div class="benefit-box">
+            <span>💬</span>
+            <h3>Atendimento</h3>
+            <p>Equipe pronta para te ajudar em qualquer etapa.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="about">
+        <div class="container about-grid">
+          <div class="about-copy">
+            <p class="eyebrow">Quem somos</p>
+            <h2>Uma loja pensada para facilitar suas compras.</h2>
+            <p>
+              A Loja Nova combina qualidade, variedade e praticidade para que você encontre o
+              que precisa sem perder tempo.
+            </p>
+            <p>
+              Trabalhamos para entregar as melhores tendências com um atendimento acolhedor e
+              uma experiência de compra simples e confiável.
+            </p>
+          </div>
+
+          <div class="about-panel">
+            <ul>
+              <li>Produtos selecionados</li>
+              <li>Preços competitivos</li>
+              <li>Entregas rápidas</li>
+              <li>Suporte humano</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">L</span>
+            <span>Loja Nova</span>
+          </div>
+          <p>Seu próximo favorito está aqui.</p>
+        </div>
+
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li>Sobre</li>
+            <li>Contato</li>
+            <li>Políticas</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Atendimento</h4>
+          <ul>
+            <li>ajuda@lojanova.com</li>
+            <li>(11) 4002-8922</li>
+            <li>Seg-Sex, 9h às 18h</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
