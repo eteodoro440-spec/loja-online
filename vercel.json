@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "./index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/cart.html", "dest": "/cart.html" },
+    { "src": "/checkout.html", "dest": "/checkout.html" },
+    { "src": "/styles.css", "dest": "/styles.css" },
+    { "src": "/script.js", "dest": "/script.js" },
+    { "src": "/cart.js", "dest": "/cart.js" },
+    { "src": "/checkout.js", "dest": "/checkout.js" }
+  ]
+}
