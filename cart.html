@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-AO">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carrinho de Compras | Loja Nova</title>
+    <title>Carrinho de Compras | Somos Família</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,8 +16,8 @@
     <header class="topbar">
       <div class="container nav">
         <div class="brand">
-          <span class="brand-mark">L</span>
-          <span>Loja Nova</span>
+          <span class="brand-mark">SF</span>
+          <span>Somos Família</span>
         </div>
 
         <nav class="menu" aria-label="Navegação principal">
@@ -28,7 +28,7 @@
         </nav>
 
         <div class="actions">
-          <button class="ghost-btn">Entrar</button>
+          <a class="ghost-btn" href="index.html#sobre">Contactos</a>
           <a href="cart.html" class="cart-btn">
             Carrinho <span id="cart-count">0</span>
           </a>
@@ -59,28 +59,25 @@
 
                 <div class="summary-item">
                   <span>Subtotal:</span>
-                  <span id="subtotal">R$ 0,00</span>
+                  <span id="subtotal">Preço sob consulta</span>
                 </div>
 
                 <div class="summary-item">
                   <span>Frete:</span>
-                  <span id="shipping">R$ 0,00</span>
+                  <span id="shipping">Preço sob consulta</span>
                 </div>
 
-                <div class="summary-item discount">
-                  <span>Desconto:</span>
-                  <span id="discount">R$ 0,00</span>
-                </div>
+                
 
                 <hr />
 
                 <div class="summary-total">
                   <span>Total:</span>
-                  <span id="total">R$ 0,00</span>
+                  <span id="total">Preço sob consulta</span>
                 </div>
 
                 <button id="checkout-btn" class="primary-btn full-width" disabled>
-                  Ir para pagamento
+                  Preparar pedido
                 </button>
 
                 <button
@@ -91,33 +88,21 @@
                   Continuar comprando
                 </button>
 
-                <div class="promo-section">
-                  <label>Código promocional</label>
-                  <div class="promo-input">
-                    <input
-                      type="text"
-                      id="promo-code"
-                      placeholder="Digite seu código"
-                      maxlength="20"
-                    />
-                    <button id="apply-promo" type="button">Aplicar</button>
-                  </div>
-                  <p id="promo-message" style="font-size: 0.85rem; margin-top: 6px"></p>
-                </div>
+                <p>Preços, entrega e pagamento serão confirmados pela loja.</p>
               </div>
 
               <div class="benefits-mini">
                 <div class="benefit-mini">
                   <span>🚚</span>
-                  <p>Frete rápido</p>
+                  <p>Entrega a combinar</p>
                 </div>
                 <div class="benefit-mini">
                   <span>🔒</span>
-                  <p>Compra segura</p>
+                  <p>Pedido por mensagem</p>
                 </div>
                 <div class="benefit-mini">
                   <span>✓</span>
-                  <p>Garantia</p>
+                  <p>Consultar condições</p>
                 </div>
               </div>
             </aside>
@@ -130,8 +115,8 @@
       <div class="container footer-grid">
         <div>
           <div class="brand footer-brand">
-            <span class="brand-mark">L</span>
-            <span>Loja Nova</span>
+            <span class="brand-mark">SF</span>
+            <span>Somos Família</span>
           </div>
           <p>Seu próximo favorito está aqui.</p>
         </div>
@@ -148,14 +133,15 @@
         <div>
           <h4>Atendimento</h4>
           <ul>
-            <li>ajuda@lojanova.com</li>
-            <li>(11) 4002-8922</li>
-            <li>Seg-Sex, 9h às 18h</li>
+            <li><a href="https://wa.me/244946925804" target="_blank" rel="noopener">WhatsApp: +244 946 925 804</a></li>
+            <li>Pedidos e informações pelo WhatsApp</li>
+            <li>Horário a confirmar</li>
           </ul>
         </div>
       </div>
     </footer>
 
+    <script src="catalog.js"></script><script src="store.js"></script>
     <script src="cart.js"></script>
   </body>
 </html>

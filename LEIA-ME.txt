@@ -1,0 +1,9 @@
+SOMOS FAMÍLIA — atualização para GitHub Pages
+
+1. Substitua os ficheiros do repositório pelos ficheiros desta pasta. Use Add file > Upload files e depois Commit changes. index.html deve ficar na raiz.
+2. Mantenha Pages: main / (root). A publicação será atualizada após o commit.
+3. WhatsApp comercial configurado: +244 946 925 804. Pode alterá-lo em config.js.
+4. Em catalog.js, substitua price: null pelos preços reais em kwanzas e confirme os produtos disponíveis. Os artigos atuais são um catálogo de apresentação.
+5. Teste adicionar produtos, alterar quantidades e preparar a mensagem no telemóvel. O pedido só é enviado quando o cliente o envia no WhatsApp; não há cobrança automática.
+
+Corrigido: carrinho persistente; ligação ao carrinho; página de pedido em falta; removida confirmação falsa de compra; removidos contactos, estatísticas e promessas fictícias do modelo.

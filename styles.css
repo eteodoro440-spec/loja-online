@@ -882,3 +882,5 @@ button {
     grid-template-columns: 1fr;
   }
 }
+
+.brand>span:last-child,.brand[href] {font-weight:900; background:linear-gradient(110deg,#d72984,#673ee8,#006c89);background-clip:text;color:transparent;letter-spacing:-.5px;text-shadow:1px 1px 0 #ffffff80;} .brand-mark{font-size:.85rem;} .catalog-note{color:var(--muted);} [hidden]{display:none!important;} #order-form{display:grid;gap:16px;max-width:600px;margin:24px 0;} #order-form input,textarea{display:block;width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;font:inherit;} #order-message{max-width:720px;margin:12px 0 24px;} @media(max-width:600px){.nav{flex-wrap:wrap;gap:12px}.brand{font-size:1rem}.actions{gap:8px}.hero-copy h1{font-size:2.4rem}.product-meta{flex-wrap:wrap;gap:8px}.add-btn{min-height:44px}}

@@ -1,2 +1,2 @@
-# loja-online
-Site de venda online - E-commerce
+# Somos Família
+Loja estática para GitHub Pages. Consulte LEIA-ME.txt.
